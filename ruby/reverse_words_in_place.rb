@@ -7,6 +7,7 @@ def reverse_phrase(phrase)
   current_word_start_index = 0
 
   (0..phrase.length).each do |i|
+    p phrase
     if phrase[i] == " " || i == phrase.length
       reverse_characters(phrase, current_word_start_index, i - 1)
       current_word_start_index = i + 1
